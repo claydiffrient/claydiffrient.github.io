@@ -70,6 +70,7 @@ theme: phase
 deploy:
   type: git
   repo: https://github.com/claydiffrient/claydiffrient.github.io
+  branch: master
 
 
 plugins:
