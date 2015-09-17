@@ -1,5 +1,5 @@
 <div class="Main__Container">
-<!-- <% page.posts.last(function(item){ %>
-  <%- partial('_partial/article', {item: item, index: true}) %>
-<% }); %> -->
+<% page.posts.sort('date', -1).limit(1).each(function(item){ %>
+  <%- partial('_partial/last_post', {item: item, index: true}) %>
+<% }); %>
 </div>
