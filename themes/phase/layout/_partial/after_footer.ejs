@@ -1,7 +1,7 @@
 <script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
 <script src="<%- config.root %>js/gallery.js"></script>
-<script src="<%- config.root %>js/axios.standalone.min.js"></script>
-<script src="<%- config.root %>js/github.js"></script>
+<script src="<%- config.root %>js/common.js"></script>
+<script src="<%- config.root %>js/app.js"></script>
 
 
 <% if (config.disqus_shortname){ %>
@@ -27,5 +27,3 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 })(jQuery);
 </script>
 <% } %>
-
-<%- partial('phasebeam') %>
