@@ -25,7 +25,7 @@ module.exports = {
     new WebpackOnBuildPlugin(function (stats) {
       childProcess.exec('hexo generate');
     }),
-    new ExtractTextPlugin('[name].css'),
+    // new ExtractTextPlugin('../css/[name].css'),
     new webpack.optimize.CommonsChunkPlugin('common', 'common.js'),
     new webpack.optimize.DedupePlugin()
   ],
@@ -36,7 +36,8 @@ module.exports = {
     loaders: [
       { test: /\.(jsx|js)$/, exclude: /node_modules/, loader: 'babel-loader?optional=runtime' },
       { test: /\.scss$/, loader: 'style!css!scss' },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
+      { test: /\.css$/, loader: 'style!css' },
+      // { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
       { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
       { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
