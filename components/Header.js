@@ -17,7 +17,7 @@ const style = css({
   },
   [MEDIUM_MIN_QUERY]: {
 
-  }
+  },
 });
 
 const imageStyle = css({
