@@ -1,14 +1,13 @@
 import React from 'react';
-import css, {insertRule} from 'next/css';
+import css, { insertRule } from 'next/css';
 import Head from 'next/head';
 import Header from '../components/Header';
+import CardContainer from '../components/CardContainer';
+import Card from '../components/Card';
 import * as colors from '../styles/colorVariables';
 
-insertRule(`html, body { background: ${colors.DARK_PRIMARY_COLOR}}`)
-insertRule(`html, body { font-family: 'Noto Sans', sans-serif}`);
-
-const style = css({
-})
+insertRule(`html, body { background: ${colors.DARK_PRIMARY_COLOR}}`);
+insertRule('html, body { font-family: "Noto Sans", sans-serif}');
 
 const HeadMaterial = () => (
   <Head>
@@ -22,7 +21,7 @@ const HeadMaterial = () => (
     <link rel="apple-touch-icon" sizes="144x144" href="/static/apple-icon-144x144.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="/static/apple-icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192"  href="/static/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/static/android-icon-192x192.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
@@ -36,9 +35,14 @@ const HeadMaterial = () => (
 );
 
 const Index = () => (
-  <div className={style}>
+  <div>
     <HeadMaterial />
     <Header />
+    <CardContainer>
+      <Card />
+      <Card />
+      <Card />
+    </CardContainer>
   </div>
 );
 
