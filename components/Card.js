@@ -13,12 +13,20 @@ const style = css({
 });
 
 
-const Card = (props) => {
-  return (
-    <div className={style}>
-      ABC
+const Card = props => (
+  <div className={`mdl-card mdl-shadow--2dp ${style}`}>
+    <div className="mdl-card__title mdl-card--expand">
+      <h2 className="mdl-card__title-text">{props.title}</h2>
     </div>
-  );
+    <div className="mdl-card__supporting-text">
+      {props.mainText}
+    </div>
+  </div>
+);
+
+Card.propTypes = {
+  title: React.PropTypes.string.isRequired,
+  mainText: React.PropTypes.string.isRequired,
 };
 
 export default Card;

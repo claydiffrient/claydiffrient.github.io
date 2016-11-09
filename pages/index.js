@@ -7,11 +7,11 @@ import Card from '../components/Card';
 import * as colors from '../styles/colorVariables';
 
 insertRule(`html, body { background: ${colors.DARK_PRIMARY_COLOR}}`);
-insertRule('html, body { font-family: "Noto Sans", sans-serif}');
 
 const HeadMaterial = () => (
   <Head>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.green-blue.min.css" />
     <link rel="apple-touch-icon" sizes="57x57" href="/static/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/static/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/static/apple-icon-72x72.png" />
@@ -39,9 +39,9 @@ const Index = () => (
     <HeadMaterial />
     <Header />
     <CardContainer>
-      <Card />
-      <Card />
-      <Card />
+      <Card title="Latest Projects" mainText="This is where you'll find my latest work."/>
+      <Card title="About" />
+      <Card title="External Links" />
     </CardContainer>
   </div>
 );

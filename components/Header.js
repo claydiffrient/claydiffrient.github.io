@@ -28,7 +28,7 @@ const imageStyle = css({
 
 const headerStyle = css({
   color: colors.PRIMARY_TEXT_COLOR,
-  fontSize: '3em',
+  fontSize: '4em',
 })
 
 const Header = () => (
