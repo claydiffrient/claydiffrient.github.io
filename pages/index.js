@@ -35,11 +35,11 @@ const HeadMaterial = () => (
 );
 
 const Index = () => (
-  <div>
+  <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <HeadMaterial />
     <Header />
     <CardContainer>
-      <Card title="Latest Projects" mainText="This is where you'll find my latest work."/>
+      <Card title="Latest Projects" mainText="This is where you'll find my latest work." />
       <Card title="About" />
       <Card title="External Links" />
     </CardContainer>
