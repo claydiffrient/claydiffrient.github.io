@@ -9,6 +9,10 @@ insertRule(`html, body { background: ${colors.DARK_PRIMARY_COLOR}}`);
 
 const HeadMaterial = () => (
   <Head>
+    <meta charSet="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Clay Diffrient Software Solutions, a web software development shop." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.green-blue.min.css" />
